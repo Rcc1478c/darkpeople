@@ -1,0 +1,22 @@
+.toggle-path {
+  transition: all 0.3s ease-in-out;
+}
+.toggle-circle {
+  top: 0.2rem;
+  left: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+input:checked ~ .toggle-circle {
+  transform: translateX(100%);
+}
+input:checked ~ .toggle-path {
+  background-color: #6875f5;
+}
+.striped-img-preview {
+  color: white;
+  background: repeating-linear-gradient(45deg, #eeeeee, #eeeeee 5px, #cccccc 5px, #cccccc 10px);
+}
+input.form-input,
+select.form-input {
+  border-width: 1px;
+}
